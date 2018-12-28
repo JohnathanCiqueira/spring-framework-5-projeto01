@@ -1,0 +1,8 @@
+package johnathan.io.projeto01.entity;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Role {
+
+}

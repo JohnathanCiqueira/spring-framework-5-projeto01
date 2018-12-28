@@ -1,0 +1,14 @@
+package johnathan.io.projeto01.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+
+import johnathan.io.projeto01.entity.User;
+
+public interface UserRepository extends JpaRepository<User, Long>{
+	
+//	@Query("select u from User u where u.nome = ?l")
+//	User findByName2(String name);
+
+	User findByName(String name);
+}

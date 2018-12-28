@@ -1,0 +1,5 @@
+package johnathan.io.projeto01.entity;
+
+public class User {
+
+}

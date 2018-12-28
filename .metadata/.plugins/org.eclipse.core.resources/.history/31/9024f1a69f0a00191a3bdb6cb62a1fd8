@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Projeto 01</title>
+</head>
+<body>
+
+	<table>
+		<tr>
+			<th>Nome</th>
+			<th>Idade</th>
+		</tr>
+		<tr th:each="user : ${userList}">
+			<td th:text="${user.name}"></td>
+			<td></td>
+		</tr>
+	</table>
+
+</body>
+</html>

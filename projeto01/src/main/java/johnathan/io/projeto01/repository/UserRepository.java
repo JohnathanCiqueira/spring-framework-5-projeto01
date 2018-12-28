@@ -1,0 +1,18 @@
+package johnathan.io.projeto01.repository;
+
+import org.springframework.data.mongodb.repository.MongoRepository;
+import org.springframework.data.mongodb.repository.Query;
+
+import johnathan.io.projeto01.entity.User;
+
+public interface UserRepository extends MongoRepository<User, Long>{
+	
+	@Query("{ 'email' : ?0 }")
+	User findByEmail(String email);
+
+	User findByName(String name);
+	
+	User findByNameIgnoreCase(String name);
+	
+	User findByNameIgnoreCaseLike(String name);
+}
